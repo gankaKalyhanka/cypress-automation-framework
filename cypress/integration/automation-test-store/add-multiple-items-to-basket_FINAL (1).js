@@ -1,7 +1,7 @@
 import AutoStore_Homepage_PO from '../../support/pageObjects/automation-test-store/AutoStore_Homepage_PO'
 /// <reference types="cypress" />
 
-describe("Add multiple items to basket", () => {
+describe("Add multiple items to the basket", () => {
   const autoStore_Homepage_PO = new AutoStore_Homepage_PO();
 
   before(function () {
