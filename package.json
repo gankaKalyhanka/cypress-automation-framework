@@ -1,0 +1,34 @@
+{
+  "name": "cypress-automation-framework",
+  "version": "1.0.0",
+  "description": "Cypress Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "triggetAllTests-headless": "npx cypress run",
+    "triggetAllTests-headed": "npx cypress run --headed",
+    "triggetAllTests-chrome": "npx cypress run --browser chrome",
+    "triggetAllTests-dashboard": "npx cypress run --record --key 75cf41a5-74a6-47ac-af23-2181c1b5bca2",
+    "triggetAllTests-webdriveruni": "npx cypress run --spec cypress/integration/webdriver-uni/*",
+    "mochawesome-merge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json",
+    "delete-mochawesome-report": "rm -rf mochawesome-report/* || true"
+     
+
+  },
+  "author": "Hanna",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.2.1",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-multi-reporters": "^1.5.0",
+    "mocha": "^9.2.1",
+    "mocha-junit-reporter": "^2.0.2",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.0.1"
+   
+  },
+  "dependencies": {
+    "-": "0.0.1",
+    "cypress-xpath": "^1.6.2"
+  }
+}
